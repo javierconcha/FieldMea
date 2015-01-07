@@ -200,8 +200,74 @@ Paul's example (LIDAR and trees?)
 	\item location
 \end{itemize}
 
-THis is added!
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Radiometric Quantities} 
+% \begin{frame}{Radiometric Quantities: Radiance}
+\begin{figure}[H]
+\begin{columns}[t] % contents are top vertically aligned
+	\begin{column}[T]{6cm} % each column can also be its own environment
+  		\includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/20123_Spring/Modeling/HydroLight/Beamer/RadianceDef.png}
+    \end{column}
+	\begin{column}[T]{4cm} % each column can also be its own environment
+  		$\Delta Q$: radian energy incident \\
+  		$\Delta t$: time interval \\
+  		$\Delta A$: surface area at location (x,y,z)\\
+  		$\Delta\Omega$: solid angle in direction ($\theta$,$\varphi$) \\
+  		$\Delta\lambda$: photons wavelength interval
+    \end{column}
+\end{columns}	
+\end{figure}
+\only<1>{\begin{equation}
+	\small L(x,y,z,t,\theta,\varphi,\lambda)\equiv\frac{\Delta Q}{\Delta t\Delta A\Delta\Omega\Delta\lambda}~~\left[ Js^{-1}m^{-2}sr^{-1}nm^{-1} \right]
+		\end{equation}}
+\only<2>{\begin{equation}
+	\small L(x,y,z,t,\theta,\varphi,\lambda)\equiv\frac{\partial^4 Q}{\partial t\partial A\partial\Omega\partial\lambda}~~\left[ Js^{-1}m^{-2}sr^{-1}nm^{-1} \right]
+		\end{equation}}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Radiometric Quantities}
+\textbf{Spectral downwelling scalar irradiance} at depth z:
+\begin{equation}
+	E_{od}(z,\lambda)=\int_{2\pi_d} L(z,\theta,\varphi,\lambda)d\Omega~~\left[Wm^{-2}nm^{-1} \right]
+\end{equation}
+\textbf{Spectral upwelling scalar irradiance} at depth z:
+\begin{equation}
+	E_{ou}(z,\lambda)=\int_{2\pi_u} L(z,\theta,\varphi,\lambda)d\Omega~~\left[Wm^{-2}nm^{-1} \right]
+\end{equation}
+\textbf{Spectral scalar irradiance} at depth z:
+\begin{align}
+	E_{o}(z,\lambda) &\equiv E_{od}(z,\lambda)+E_{ou}(z,\lambda)\\
+					 &=\int_{4\pi} L(z,\theta,\varphi,\lambda)d\Omega
+\end{align}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Radiometric Quantities}
+\textbf{Spectral downwelling plane irradiance} at depth z:
+\begin{equation}
+	E_{d}(z,\lambda)=\int_{2\pi_d} L(z,\theta,\varphi,\lambda)|cos\theta|d\Omega~~\left[Wm^{-2}nm^{-1} \right]
+\end{equation}
+Photosynthetic available radiation, \textbf{PAR}:
+\begin{equation}
+	PAR(z)\equiv \int_{350nm}^{700nm} \frac{\lambda}{hc}E_o(z,\lambda)d\lambda~~~\left[photons~s^{-1}m^{-2} \right]
+\end{equation}
+\end{frame}
+% --- slide ------------------------------------------------
+\subsection[AOPs]{Apparent Optical Properties}
+\begin{frame}{Apparent Optical Properties}
+\textbf{AOPs:} depend both on the medium and on the directional structure of the ambient light field
 
+\vspace{\baselineskip}
+
+\textbf{Irradiance reflectance:}
+\begin{equation}
+	R(z,\lambda)\equiv \frac{E_u(z,\lambda)}{E_d(z,\lambda)}
+\end{equation}
+\textbf{Remote sensing reflectance:}
+\begin{equation}
+	R_{rs}(\theta,\varphi,\lambda)\equiv \frac{L_w(\theta,\varphi,\lambda)}{E_d(\lambda)}~~\left[sr^{-1} \right]
+\end{equation}
+where $L_w$ is the \textbf{water-leaving radiance}
 \end{frame}
 % --- slide ------------------------------------------------
 \begin{frame}{\LARGE Objectives}
