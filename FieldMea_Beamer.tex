@@ -180,8 +180,9 @@
 \LARGE
 {\bf Why is it important?}\\
 \begin{itemize}\itemsep.3cm
-	\item Validation: comparison to see how close a model to the field measurements is (accuracy)
-	\item Calibration or Correction: adjust model to be more precise (data fitting)
+	\item Validation: comparison to know how close a model is to the field measurements (accuracy)
+	\item Calibration or Correction: adjust model or instrument to be more precise (data fitting)
+	\item Data collection to get characteristics of target, materials, etc.
 \end{itemize}
 \end{frame}
 % --- slide ------------------------------------------------
@@ -242,12 +243,14 @@ Paul's example (LIDAR and trees?)
 \section{Background}
 \subsection*{}
 % --- slide ------------------------------------------------
-\begin{frame}{\LARGE Kind of Measurements} 
+\begin{frame}{\LARGE Examples of Kind of Measurements} 
 \Large
 \begin{itemize}\itemsep.4cm
 	\item Reflectance: Radiometer
 	\item Concentration: Spectrophotometer
 	\item Location: GPS
+	\item Structure: LIDAR
+	\item Leaf Area Index (LAI): Ceptometer
 \end{itemize}
 
 \end{frame}
@@ -366,6 +369,46 @@ Photosynthetic available radiation, \textbf{PAR}:
 \section{Taking Measurements}
 \subsection*{}
 % --- slide ------------------------------------------------
+\begin{frame}{Diffuse white reference panel (Spectralon)}
+\begin{columns}[c] % contents are top vertically aligned
+  	\begin{column}[T]{5cm}
+
+		\begin{itemize}\itemsep.4cm
+			\item{For a Lambertian surface:\\
+				\vspace{.1cm}
+				$L = \frac{\displaystyle E_dr}{\displaystyle \pi} \Rightarrow E_d = \frac{\displaystyle  L\pi}{\displaystyle r}$}
+			\item{ For spectralon $r\approx 1$ ($\approx 100\%$)\\
+			$\Rightarrow E_d = L\pi$}
+		\end{itemize}
+	\end{column}	
+	\begin{column}[T]{7cm} % each column can also be its own environment
+	  			\begin{figure}[htb]
+					\centering
+					 \includegraphics[height=3cm]{./Images/spectralon-web.jpg}
+				\end{figure}
+				\begin{figure}[htb]
+					\centering
+					 \includegraphics[height=3cm]{./Images/SpectralonTargetsReflectance.jpg}
+				\end{figure}
+	 
+	\end{column}
+\end{columns}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Reflectance}
+\begin{itemize}\itemsep0.4cm
+	\item{ \textbf{Reflectance:} $R(z,\lambda)\equiv \frac{\displaystyle L_u(z,\lambda)}{\displaystyle E_d(z,\lambda)}$}
+	\item Two measurements:\\
+		\begin{itemize}\itemsep.2cm
+			\item{ $E_d$: Spectralon}
+			\item{ $L_u$: Target or sample}
+		\end{itemize}
+\end{itemize}
+
+
+
+\end{frame}
+% --- slide ------------------------------------------------
 \begin{frame}{\LARGE Remote-Sensing Reflectance}
  	\begin{columns}[c] % contents are top vertically aligned
   		\begin{column}[T]{5cm} % each column can also be its own environment
@@ -410,30 +453,71 @@ Photosynthetic available radiation, \textbf{PAR}:
 
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{Diffuse white reference panel (Spectralon)}
-\begin{columns}[c] % contents are top vertically aligned
-  	\begin{column}[T]{5cm}
+\begin{frame}{Things to consider for a field campaign}
 
-		\begin{itemize}\itemsep.4cm
-			\item{For a Lambertian surface:\\
-				\vspace{.1cm}
-				$L = \frac{\displaystyle E_dr}{\displaystyle \pi} \Rightarrow E_d = \frac{\displaystyle  L\pi}{\displaystyle r}$}
-			\item{ For spectralon $r\approx 1$ ($\approx 100\%$)\\
-			$\Rightarrow E_d = L\pi$}
-		\end{itemize}
-	\end{column}	
-	\begin{column}[T]{7cm} % each column can also be its own environment
-	  			\begin{figure}[htb]
-					\centering
-					 \includegraphics[height=3cm]{./Images/spectralon-web.jpg}
-				\end{figure}
-				\begin{figure}[htb]
-					\centering
-					 \includegraphics[height=3cm]{./Images/SpectralonTargetsReflectance.jpg}
-				\end{figure}
-	 
-	\end{column}
-\end{columns}
+\begin{itemize}
+
+	\item have a good datasheet
+	\item download and look data ASAP
+	\item tools for in-field repairs and cleaning
+	\item water, food, field clothes, first aid
+	\item plan collection ahead of time
+	\item write down procedure
+	\item setting up plots/sites
+	\item take pictures
+	\item read manual
+	\item charge batteries
+	\item check batteries
+	\item check instrument in advance
+	\item The data should be taken as close to the time of acquisition as possible (due to inevitable landscape changes)
+
+\end{itemize}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns}
+
+\begin{itemize}
+	\item Brings theory to practice
+	\item It is FUN!
+\end{itemize}
+
+SHOW PICTURES HERE!
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{DIRS Instruments}
+\subsection*{}
+% --- slide ------------------------------------------------
+\begin{frame}{DIRS Lab Instruments}
+\begin{itemize}
+	\item ASD
+	\item SVC
+	\item RIT LIDAR
+	\item GRIT
+	\item WASP
+	\item GPS
+	\item HydroScat-2
+	\item AccuPAR LP-80
+	\item WASP
+	\item WASP Lite
+	\item MISI
+	\item Thermistor 
+	\item Camera
+	\item Tape measures
+\end{itemize}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Data Extraction}
+\begin{itemize}\itemsep.4cm
+	\item Data in proprietary format
+	\item Translate or export to ASCII (text file)
+	\item Text files manipulation (IDL, Matlab, Python, C++, bash).
+\end{itemize}
+
+
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Conclusions}
