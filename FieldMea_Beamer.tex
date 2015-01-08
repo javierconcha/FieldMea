@@ -95,16 +95,16 @@
 	\titlepage
 	
 	\begin{textblock*}{10cm}(10.0cm,-8.2cm)
-	   \includegraphics[height=10mm]{/Users/javier/Desktop/Javier/MASTER_RIT/2011_THESIS/LaTeX/Presentation/tiger_walking_rit_color.eps}
+	   \includegraphics[height=10mm]{Images/tiger_walking_rit_color.eps}
 	\end{textblock*}
 	
 	\begin{textblock*}{10cm}(-.7cm,-8.2cm)
-	   \includegraphics[height=10mm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/dirs_logo.png}
+	   \includegraphics[height=10mm]{./Images/dirs_logo.png}
 	\end{textblock*}
 	
 	\begin{textblock*}{9cm}(2cm,-4.5cm)
 
-	   \tikz\node[opacity=0.3]{ \includegraphics[width=65mm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/landsat8-earth.jpg}};
+	   \tikz\node[opacity=0.3]{ \includegraphics[width=65mm]{./Images/landsat8-earth.jpg}};
 	\end{textblock*}
 
 	\begin{textblock*}{12cm}(3.0cm,0cm)
@@ -124,7 +124,7 @@
 \addtobeamertemplate{frametitle}{}{%
 \begin{textblock*}{90mm}(8.2cm,-0.5cm)
 % \includegraphics[height=0.5cm]{/Users/javier/Desktop/Javier/MASTER_RIT/SPIE2012/Slides/rit_white_no_bar.jpg}
-\includegraphics[height=0.4cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/RIT_LOGO.png}
+\includegraphics[height=0.4cm]{./Images/RIT_LOGO.png}
 \end{textblock*}}
 
 
@@ -163,13 +163,16 @@
 \end{frame}
 % --- slide ------------------------------------------------
 \begin{frame}{\LARGE Definitions} 
-\LARGE
-{\bf Field Measurements or Groundtruth:}\\
-\vspace{.1cm}
-``Observations or measurements made at or near the surface of the earth in support of remote sensing.''\\
-\vspace{.5cm}
-{\bf Remote Sensing:}\\
+\Large
+
+\begin{itemize}\itemsep.5cm
+	\item {\bf Remote Sensing:}\\
 ``Remote sensing is the science of obtaining information about objects or areas from a distance, typically from aircraft or satellites.''\\
+	\item {\bf Field Measurements or Groundtruth or Ground-based data or reference data or ancillary data:}\\
+
+``Observations or measurements made at or near the surface of the earth in support of remote sensing.''\\
+
+\end{itemize}
 
 \end{frame}
 % --- slide ------------------------------------------------
@@ -177,9 +180,8 @@
 \LARGE
 {\bf Why is it important?}\\
 \begin{itemize}\itemsep.3cm
-	\item Validation
-	\item Calibration
-	\item Correction
+	\item Validation: comparison to see how close a model to the field measurements is (accuracy)
+	\item Calibration or Correction: adjust model to be more precise (data fitting)
 \end{itemize}
 \end{frame}
 % --- slide ------------------------------------------------
@@ -194,7 +196,7 @@ Paul's example (LIDAR and trees?)
 \begin{frame}{\LARGE Field Data Collection}{\vspace{0.1cm} \Large Area of Study}
 \begin{figure}[htb]
   \centering
-	\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/AreaOfStudy1.pdf} 
+	\includegraphics[height=7cm]{./Images/AreaOfStudy1.pdf} 
   % \caption{Sites in the Rochester Embayment for the water sample collection on September, $19^{th}$, 2013.\label{fig:0910913Sites} } 
 \end{figure}
 \end{frame}
@@ -202,7 +204,7 @@ Paul's example (LIDAR and trees?)
 \begin{frame}{\LARGE Field Data Collection (con't)}{\vspace{0.1cm} \Large Area of Study}
 \begin{figure}[htb]
   	\centering
-  	\includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/AreaOfStudy2.pdf}
+  	\includegraphics[height=6cm]{./Images/AreaOfStudy2.pdf}
 \end{figure}
 \end{frame}
 % --- slide ------------------------------------------------
@@ -210,7 +212,7 @@ Paul's example (LIDAR and trees?)
 \vspace{-1cm}
 \begin{figure}[htb]
 \centering
-\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/Collection.pdf}
+\includegraphics[height=7cm]{./Images/Collection.pdf}
       
 \end{figure}
 % \centerline{Comparison between traditional ELM (dashed lines)}
@@ -221,7 +223,7 @@ Paul's example (LIDAR and trees?)
 \vspace{-1cm}
 \begin{figure}[htb]
 \centering
-\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/LabMeasurements.pdf}
+\includegraphics[height=7cm]{./Images/LabMeasurements.pdf}
       
 \end{figure}
 % \centerline{Comparison between traditional ELM (dashed lines)}
@@ -232,19 +234,20 @@ Paul's example (LIDAR and trees?)
 \begin{table}[htb]
   
   \centering
-  \includegraphics[width=11cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/Collect1314.png}
+  \includegraphics[width=11cm]{./Images/Collect1314.png}
   \label{tab:collect}
 \end{table}
 \end{frame}
 %%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Background}
+\subsection*{}
 % --- slide ------------------------------------------------
 \begin{frame}{\LARGE Kind of Measurements} 
 \Large
 \begin{itemize}\itemsep.4cm
-	\item reflectance
-	\item concentration
-	\item location
+	\item Reflectance: Radiometer
+	\item Concentration: Spectrophotometer
+	\item Location: GPS
 \end{itemize}
 
 \end{frame}
@@ -254,7 +257,7 @@ Paul's example (LIDAR and trees?)
 \begin{figure}[H]
 \begin{columns}[t] % contents are top vertically aligned
 	\begin{column}[T]{6cm} % each column can also be its own environment
-  		\includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/20123_Spring/Modeling/HydroLight/Beamer/RadianceDef.png}
+  		\includegraphics[height=6cm]{./Images/RadianceDef.png}
     \end{column}
 	\begin{column}[T]{4cm} % each column can also be its own environment
   		$\Delta Q$: radian energy incident \\
@@ -276,7 +279,7 @@ Paul's example (LIDAR and trees?)
 \begin{frame}{\LARGE Radiance Sensor} 
 \begin{figure}
 \centering
-    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/RadianceSensor.png}
+    \includegraphics[height=5cm]{./Images/RadianceSensor.png}
 \end{figure}
 \vspace{-.7cm}
 \hfill \scriptsize (Source: \cite{MobleyOnline})
@@ -306,7 +309,7 @@ Paul's example (LIDAR and trees?)
 \begin{frame}{\LARGE Scalar Irradiance Sensor} 
 \begin{figure}
 \centering
-    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/ScalarIrradianceSensor.jpg}
+    \includegraphics[height=5cm]{./Images/ScalarIrradianceSensor.jpg}
 \end{figure}
 \vspace{-.7cm}
 \hfill \scriptsize (Source: \cite{MobleyOnline})
@@ -331,7 +334,7 @@ Photosynthetic available radiation, \textbf{PAR}:
 \begin{frame}{\LARGE Planar Irradiance Sensor} 
 \begin{figure}
 \centering
-    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/PlaneIrradianceSensor.png}
+    \includegraphics[height=5cm]{./Images/PlaneIrradianceSensor.png}
 \end{figure}
 \vspace{-.7cm}
 \hfill \scriptsize (Source: \cite{MobleyOnline})
@@ -342,7 +345,6 @@ Photosynthetic available radiation, \textbf{PAR}:
 
 \end{frame}
 % --- slide ------------------------------------------------
-\subsection*{}
 \begin{frame}{Reflectance}
 \begin{itemize}\itemsep.4cm
 	\item {\textbf{Irradiance reflectance:}\\
@@ -362,6 +364,7 @@ Photosynthetic available radiation, \textbf{PAR}:
 \end{frame}
 %%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Taking Measurements}
+\subsection*{}
 % --- slide ------------------------------------------------
 \begin{frame}{\LARGE Remote-Sensing Reflectance}
  	\begin{columns}[c] % contents are top vertically aligned
@@ -390,7 +393,7 @@ Photosynthetic available radiation, \textbf{PAR}:
     	\begin{column}[T]{7cm} % each column can also be its own environment
   			\begin{figure}[htb]
 				\centering
-				 \includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/LwGeometry.png}
+				 \includegraphics[height=6cm]{./Images/LwGeometry.png}
 			\end{figure}
  
     	\end{column}
@@ -402,7 +405,7 @@ Photosynthetic available radiation, \textbf{PAR}:
 
 \begin{figure}[htb]
 				\centering
-				 \includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/LskyGeometry.png}
+				 \includegraphics[height=6cm]{./Images/LskyGeometry.png}
 			\end{figure}
 
 \end{frame}
@@ -422,11 +425,11 @@ Photosynthetic available radiation, \textbf{PAR}:
 	\begin{column}[T]{7cm} % each column can also be its own environment
 	  			\begin{figure}[htb]
 					\centering
-					 \includegraphics[height=3cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/spectralon-web.jpg}
+					 \includegraphics[height=3cm]{./Images/spectralon-web.jpg}
 				\end{figure}
 				\begin{figure}[htb]
 					\centering
-					 \includegraphics[height=3cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/SpectralonTargetsReflectance.jpg}
+					 \includegraphics[height=3cm]{./Images/SpectralonTargetsReflectance.jpg}
 				\end{figure}
 	 
 	\end{column}
@@ -467,7 +470,7 @@ Photosynthetic available radiation, \textbf{PAR}:
 
 \begin{figure}[htb]
 \centering
-\includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/LC80160302013262LGN00.jpg}
+\includegraphics[height=5cm]{./Images/LC80160302013262LGN00.jpg}
 \end{figure}
 \vspace{-.5cm}
 \centerline{\tiny (09/19/2013)}
@@ -484,7 +487,7 @@ Photosynthetic available radiation, \textbf{PAR}:
   \frametitle{References}
   % \nocite{*}
   \bibliographystyle{apalike}
-  \bibliography{/Users/javier/Desktop/Javier/PHD_RIT/Latex/javier_bib}
+  \bibliography{./javier_bib}
 \end{frame}
 \end{document} 
 % EEEEEEEEEEENNNNNNNNNNNNNNDDDDDDDDDDDD
