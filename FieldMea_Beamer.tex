@@ -59,7 +59,7 @@
 	
 	% -------------------------------------- Slide 1
 	\title[Field Measurements and Instrumentation]{Intro to Instrumentation and Field Measurements in Remote Sensing}
-	\author[Javier Concha]{\Large Javier Concha and Paul Romanczyk}
+	\author[J. Concha \& P. Romanczyk]{\Large Javier Concha and Paul Romanczyk}
 	\institute{\footnotesize Digital Imaging and Remote Sensing Lab\\Chester F. Carlson Center for Imaging Science\\ Rochester Institute of Technology}
 	\date{\today}
 
@@ -73,7 +73,7 @@
 
 \addtocounter{framenumber}{-1}	
 
-\setbeamertemplate{footline}{\hbox{\vspace{0.1cm} \insertshortauthor \hspace*{2.5cm} \insertshorttitle \hspace*{4.4cm} \hfill\insertframenumber}} 
+\setbeamertemplate{footline}{\hbox{\vspace{0.1cm} \insertshortauthor \hspace*{2.0cm} \insertshorttitle \hspace*{3.8cm} \hfill\insertframenumber}} 
 }	
 
 % \AtBeginSubsection[ ]
@@ -190,7 +190,54 @@ Javier's example (over water mea.)\\
 Paul's example (LIDAR and trees?)
 
 \end{frame}
-
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Collection}{\vspace{0.1cm} \Large Area of Study}
+\begin{figure}[htb]
+  \centering
+	\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/AreaOfStudy1.pdf} 
+  % \caption{Sites in the Rochester Embayment for the water sample collection on September, $19^{th}$, 2013.\label{fig:0910913Sites} } 
+\end{figure}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Collection (con't)}{\vspace{0.1cm} \Large Area of Study}
+\begin{figure}[htb]
+  	\centering
+  	\includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/AreaOfStudy2.pdf}
+\end{figure}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Collection (con't)}
+\vspace{-1cm}
+\begin{figure}[htb]
+\centering
+\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/Collection.pdf}
+      
+\end{figure}
+% \centerline{Comparison between traditional ELM (dashed lines)}
+% \centerline{and model-based ELM (solid lines).}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Collection (con't)}{\Large Lab Measurements} 
+\vspace{-1cm}
+\begin{figure}[htb]
+\centering
+\includegraphics[height=7cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_ASPRS_SOY/Images/LabMeasurements.pdf}
+      
+\end{figure}
+% \centerline{Comparison between traditional ELM (dashed lines)}
+% \centerline{and model-based ELM (solid lines).}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Collection (con't)}{\vspace{0.1cm} \Large 2013 and 2014 Seasons}
+\begin{table}[htb]
+  
+  \centering
+  \includegraphics[width=11cm]{/Users/javier/Desktop/Javier/PHD_RIT/Latex/Proposal/Images/Collect1314.png}
+  \label{tab:collect}
+\end{table}
+\end{frame}
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}
 % --- slide ------------------------------------------------
 \begin{frame}{\LARGE Kind of Measurements} 
 \Large
@@ -202,7 +249,7 @@ Paul's example (LIDAR and trees?)
 
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{\LARGE Radiometric Quantities} 
+\begin{frame}{\LARGE Radiometric Quantities: Radiance} 
 % \begin{frame}{Radiometric Quantities: Radiance}
 \begin{figure}[H]
 \begin{columns}[t] % contents are top vertically aligned
@@ -226,7 +273,21 @@ Paul's example (LIDAR and trees?)
 		\end{equation}}
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{Radiometric Quantities}
+\begin{frame}{\LARGE Radiance Sensor} 
+\begin{figure}
+\centering
+    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/RadianceSensor.png}
+\end{figure}
+\vspace{-.7cm}
+\hfill \scriptsize (Source: \cite{MobleyOnline})
+
+% \vspace{0.2cm}
+% \centerline{Water Pixels}
+% \centerline{(Unknown concentrations)}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Radiometric Quantities: Irradiance}
 \textbf{Spectral downwelling scalar irradiance} at depth z:
 \begin{equation}
 	E_{od}(z,\lambda)=\int_{2\pi_d} L(z,\theta,\varphi,\lambda)d\Omega~~\left[Wm^{-2}nm^{-1} \right]
@@ -242,7 +303,21 @@ Paul's example (LIDAR and trees?)
 \end{align}
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{Radiometric Quantities}
+\begin{frame}{\LARGE Scalar Irradiance Sensor} 
+\begin{figure}
+\centering
+    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/ScalarIrradianceSensor.jpg}
+\end{figure}
+\vspace{-.7cm}
+\hfill \scriptsize (Source: \cite{MobleyOnline})
+
+% \vspace{0.2cm}
+% \centerline{Water Pixels}
+% \centerline{(Unknown concentrations)}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Radiometric Quantities: Irradiance}
 \textbf{Spectral downwelling plane irradiance} at depth z:
 \begin{equation}
 	E_{d}(z,\lambda)=\int_{2\pi_d} L(z,\theta,\varphi,\lambda)|cos\theta|d\Omega~~\left[Wm^{-2}nm^{-1} \right]
@@ -253,55 +328,126 @@ Photosynthetic available radiation, \textbf{PAR}:
 \end{equation}
 \end{frame}
 % --- slide ------------------------------------------------
-\subsection[AOPs]{Apparent Optical Properties}
-\begin{frame}{Apparent Optical Properties}
-\textbf{AOPs:} depend both on the medium and on the directional structure of the ambient light field
+\begin{frame}{\LARGE Planar Irradiance Sensor} 
+\begin{figure}
+\centering
+    \includegraphics[height=5cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/PlaneIrradianceSensor.png}
+\end{figure}
+\vspace{-.7cm}
+\hfill \scriptsize (Source: \cite{MobleyOnline})
 
-\vspace{\baselineskip}
+% \vspace{0.2cm}
+% \centerline{Water Pixels}
+% \centerline{(Unknown concentrations)}
 
-\textbf{Irradiance reflectance:}
-\begin{equation}
-	R(z,\lambda)\equiv \frac{E_u(z,\lambda)}{E_d(z,\lambda)}
-\end{equation}
-\textbf{Remote sensing reflectance:}
-\begin{equation}
-	R_{rs}(\theta,\varphi,\lambda)\equiv \frac{L_w(\theta,\varphi,\lambda)}{E_d(\lambda)}~~\left[sr^{-1} \right]
-\end{equation}
-where $L_w$ is the \textbf{water-leaving radiance}
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{\LARGE Objectives}
-\begin{itemize}
-\Large
-\item Develop over-water atmospheric correction
-\vspace{.4cm}
-\item Design water constituent retrieval algorithm
-\vspace{.4cm}
-\item Apply glint correction
-\vspace{.4cm}
-\item Validate results
-\vspace{.4cm}
-\item Demo process to a different study site
-\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions}
-\subsection*{Conclusions}
-% --- slide ------------------------------------------------
-\begin{frame}{\LARGE Conclusions}
-
-\Large
+\subsection*{}
+\begin{frame}{Reflectance}
 \begin{itemize}\itemsep.4cm
-	\item Current retrieval algorithm depends on IOPs from the field. Not always available!
-
-	\item LUT from Hydrolight: Highly dependent in phase function
-
-	\item Obtain field data for Landsat-8 is difficult, mainly for weather conditions
+	\item {\textbf{Irradiance reflectance:}\\
+			\begin{equation}
+				R(z,\lambda)\equiv \frac{E_u(z,\lambda)}{E_d(z,\lambda)}
+			\end{equation}}\\
+	\item{ \textbf{Remote sensing reflectance (water):}\\
+			\begin{equation}
+				R_{rs}(\theta,\varphi,\lambda)\equiv \frac{L_w(\theta,\varphi,\lambda)}{E_d(\lambda)}~~\left[sr^{-1} \right]
+			\end{equation}\\
+			where $L_w$ is the \textbf{water-leaving radiance}\\}
+	\item{ \textbf{Bidirectional Reflectance Distribution Function (BRDF):}\\
+			\begin{equation}
+				r_{BRDF} = \frac{\displaystyle L(\theta_o,\phi_o)}{\displaystyle E(\theta_i,\phi_i)}~~~\left[sr^{-1}\right]
+			\end{equation}}
 \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Taking Measurements}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Remote-Sensing Reflectance}
+ 	\begin{columns}[c] % contents are top vertically aligned
+  		\begin{column}[T]{5cm} % each column can also be its own environment
+  		\begin{itemize}
+  		\item 3 measurements:
+	  		\begin{itemize}
+	  			\item {$L_g$ (spectralon)}
+	  			\item {$L_t = L_r+L_w$ (water)}
+	  			\item {$L_{sky}$}
+	  		\end{itemize}
+	  	\item{Remote-sensing reflectance:\\
+	  			\vspace{-0.5cm}
+	  			\begin{gather*} 
+	  				R_{rs} = L_w/E_d\\
+	  				= (L_t - L_r)/E_d
+	  			\end{gather*}\\
+	  			with $L_r = 0.028*L_{sky}$}	
+	  	
+	  	\item {$E_d = L_g*\pi$}
+	  	\item {$\phi:$ azimuthal angle}
+	  	\item {$\theta:$ zenith angle}
+  		\end{itemize}
+    	\end{column}
+    	\hspace{-1cm}
+    	\begin{column}[T]{7cm} % each column can also be its own environment
+  			\begin{figure}[htb]
+				\centering
+				 \includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/LwGeometry.png}
+			\end{figure}
+ 
+    	\end{column}
+    \end{columns}
+\end{frame}
+
+% --- slide ------------------------------------------------
+\begin{frame}{$L_{sky}$}
+
+\begin{figure}[htb]
+				\centering
+				 \includegraphics[height=6cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/LskyGeometry.png}
+			\end{figure}
 
 \end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Diffuse white reference panel (Spectralon)}
+\begin{columns}[c] % contents are top vertically aligned
+  	\begin{column}[T]{5cm}
+
+		\begin{itemize}\itemsep.4cm
+			\item{For a Lambertian surface:\\
+				\vspace{.1cm}
+				$L = \frac{\displaystyle E_dr}{\displaystyle \pi} \Rightarrow E_d = \frac{\displaystyle  L\pi}{\displaystyle r}$}
+			\item{ For spectralon $r\approx 1$ ($\approx 100\%$)\\
+			$\Rightarrow E_d = L\pi$}
+		\end{itemize}
+	\end{column}	
+	\begin{column}[T]{7cm} % each column can also be its own environment
+	  			\begin{figure}[htb]
+					\centering
+					 \includegraphics[height=3cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/spectralon-web.jpg}
+				\end{figure}
+				\begin{figure}[htb]
+					\centering
+					 \includegraphics[height=3cm]{/Users/javier/Desktop/Javier/PHD_RIT/2014_Intersession/beamer/Images/SpectralonTargetsReflectance.jpg}
+				\end{figure}
+	 
+	\end{column}
+\end{columns}
+\end{frame}
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Conclusions}
+% \subsection*{Conclusions}
+% % --- slide ------------------------------------------------
+% \begin{frame}{\LARGE Conclusions}
+
+% \Large
+% \begin{itemize}\itemsep.4cm
+% 	\item Current retrieval algorithm depends on IOPs from the field. Not always available!
+
+% 	\item LUT from Hydrolight: Highly dependent in phase function
+
+% 	\item Obtain field data for Landsat-8 is difficult, mainly for weather conditions
+% \end{itemize}
+
+% \end{frame}
 
 % --- slide ------------------------------------------------
 {	
