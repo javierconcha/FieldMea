@@ -394,6 +394,36 @@ Photosynthetic available radiation, \textbf{PAR}:
 	\end{column}
 \end{columns}
 \end{frame}
+
+% --- slide ------------------------------------------------
+\begin{frame}{Diffuse white reference panel (Spectralon)}
+	\scriptsize
+%	\begin{flalign}L_\lambda=&
+%		\underbrace{E_{s,\lambda}\cdot\cos\sigma\cdot\tau_{1,\lambda}\cdot\tau_{2,\lambda}\cdot\frac{\rho_\lambda}{\pi}}_{\mbox{solar}}+
+%		\underbrace{\epsilon_\lambda\cdot\tau_{2,\lambda}\cdot L_{T,\lambda}}_{\mbox{emmissive}}+
+%		F\cdot E_{ds,\lambda}\cdot\tau_{2,\lambda}\cdot\frac{r_{d,\lambda}}{\pi}+\nonumber\\
+%		&F\cdot E_{d\epsilon,\lambda}\cdot\tau_{2,\lambda}\cdot\frac{r_{d,\lambda}}{\pi}+
+%		(1-F)\cdot L_{bs,\lambda}\cdot\tau_{2,\lambda}\cdot r_{d,\lambda}+\nonumber\\
+%		&(1-F)\cdot L_{b\epsilon,\lambda}\cdot\tau_{2,\lambda}\cdot r_{d,\lambda}+
+%		\underbrace{L_{us,\lambda}+L_{u\epsilon,\lambda}}_{\mbox{upwelling}}
+%	\end{flalign}
+	\begin{equation}
+		L=\underbrace{E_s'\cdot\cos\sigma'\cdot\tau_1\cdot\tau_2\cdot\frac{\rho}{\pi}}_{\mbox{solar}}+
+		\underbrace{F\cdot E_{ds}\cdot\tau_2\cdot\frac{\rho_d}{\pi}}_{\mbox{sky}}+
+		\underbrace{(1-F)\cdot E_{bs}\cdot\tau_2\cdot\frac{\rho_d}{\pi}}_{\mbox{adjacency}}+
+		\underbrace{L_{us}}_{\mbox{upwelling}}
+	\end{equation}
+	Eqn.\ 4.69 from \cite{schott2007remote}.
+	\begin{flalign}
+		L=&m\cdot\rho+b\\
+		L_{tar}=&m\cdot\rho_{tar}+b\\
+		L_{ref}=&m\cdot\rho_{ref}+b\\
+		\rho_{tar}=& \frac{L_{tar}-b}{m}\\
+		m=&\frac{L_{ref}-b}{\rho_{ref}}\\
+		\rho_{tar}=& \frac{L_{tar}-b}{L_{ref}-b}\cdot\rho_{ref}
+	\end{flalign}
+\end{frame}
+
 % --- slide ------------------------------------------------
 \begin{frame}{Reflectance}
 \begin{itemize}\itemsep0.4cm
