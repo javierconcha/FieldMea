@@ -185,16 +185,16 @@
 	\item Data collection to get characteristics of target, materials, etc.
 \end{itemize}
 \end{frame}
-% --- slide ------------------------------------------------
-\begin{frame}{\LARGE Motivation}{\vspace{0.1cm} \Large Examples}
-\vspace{-.7cm}
-Include:\\
-Javier's example (over water mea.)\\
-Paul's example (LIDAR and trees?)
+% % --- slide ------------------------------------------------
+% \begin{frame}{\LARGE Motivation}{\vspace{0.1cm} \Large Examples}
+% \vspace{-.7cm}
+% Include:\\
+% Javier's example (over water mea.)\\
+% Paul's example (LIDAR and trees?)
 
-\end{frame}
+% \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{\LARGE Field Data Collection}{\vspace{0.1cm} \Large Area of Study}
+\begin{frame}{\LARGE Example: Field Data Collection }{\vspace{0.1cm} \Large Area of Study}
 \begin{figure}[htb]
   \centering
 	\includegraphics[height=7cm]{./Images/AreaOfStudy1.pdf} 
@@ -238,6 +238,27 @@ Paul's example (LIDAR and trees?)
   \includegraphics[width=11cm]{./Images/Collect1314.png}
   \label{tab:collect}
 \end{table}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Retrieval}{\vspace{.1cm} \Large Concentration Maps}
+% \vspace{-.3cm}
+\centering
+\begin{figure}[htb]
+\centering
+\includegraphics[trim=200 0 180 0,clip,height=8cm]{/Users/javier/Desktop/Javier/PHD_RIT/ConferencesAndApplications/2014_RITResearchSymposium/Images/RetrievalResults.eps}
+      
+\end{figure}
+% \centerline{Comparison between traditional ELM (dashed lines)}
+% \centerline{and model-based ELM (solid lines).}
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{\LARGE Field Data Use}
+\Large
+\begin{itemize}\itemsep.5cm
+	\item Reflectance: Atmospheric Correction
+	\item Chl-{\it a} concentration: comparison with model
+\end{itemize}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Background}
@@ -372,7 +393,7 @@ Photosynthetic available radiation, \textbf{PAR}:
 \begin{frame}{Diffuse white reference panel (Spectralon)}
 \begin{columns}[c] % contents are top vertically aligned
   	\begin{column}[T]{5cm}
-
+  	\vspace{2cm}
 		\begin{itemize}\itemsep.4cm
 			\item{For a Lambertian surface:\\
 				\vspace{.1cm}
@@ -382,13 +403,15 @@ Photosynthetic available radiation, \textbf{PAR}:
 		\end{itemize}
 	\end{column}	
 	\begin{column}[T]{7cm} % each column can also be its own environment
+				\vspace{-.5cm}	
 	  			\begin{figure}[htb]
 					\centering
 					 \includegraphics[height=3cm]{./Images/spectralon-web.jpg}
 				\end{figure}
+				\vspace{-.7cm}
 				\begin{figure}[htb]
 					\centering
-					 \includegraphics[height=3cm]{./Images/SpectralonTargetsReflectance.jpg}
+					 \includegraphics[height=4cm]{./Images/SpectralonTargetsReflectance.jpg}
 				\end{figure}
 	 
 	\end{column}
@@ -454,35 +477,47 @@ Photosynthetic available radiation, \textbf{PAR}:
 \end{frame}
 % --- slide ------------------------------------------------
 \begin{frame}{Things to consider for a field campaign}
+\large
+\begin{itemize}\itemsep0.35cm
+\item Planning ahead: permits, what kind of measurements, how many people, what conditions, instruments availability, shipping, prioritization of data.
+\item Equipment check list
+\item Contact list: phone numbers, emergency numbers, emails
+\item Risk management form (RIT requirement)
+\item Direction how to get to the place
 
-\begin{itemize}
-
-	\item have a good datasheet
-	\item download and look data ASAP
-	\item tools for in-field repairs and cleaning
-	\item water, food, field clothes, first aid
-	\item plan collection ahead of time
-	\item write down procedure
-	\item setting up plots/sites
-	\item take pictures
-	\item read manual
-	\item charge batteries
-	\item check batteries
-	\item check instrument in advance
-	\item The data should be taken as close to the time of acquisition as possible (due to inevitable landscape changes)
 
 \end{itemize}
 
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{Field Campaigns}
+\begin{frame}{Things to consider for a field campaign}
+\large
+\begin{itemize}\itemsep0.35cm
+\item Have a good datasheet
+\item Download and look data from the instrument ASAP!!!
+\item Tools for in-field repairs and cleaning
+\item Water, food, field clothes, first aid kit
+\item Plan collection ahead of time
+\item Write down procedure
+\item Setting up plots/sites
+\item Take pictures
 
-\begin{itemize}
-	\item Brings theory to practice
-	\item It is FUN!
 \end{itemize}
 
-SHOW PICTURES HERE!
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Things to consider for a field campaign}
+\large
+\begin{itemize}\itemsep0.35cm
+
+\item Read instrument manual
+\item Check and charge batteries in advance
+\item Check instrument in advance
+\item The data should be taken as close to the time of acquisition as possible (due to inevitable landscape changes)
+\item Weather conditions 
+\item Take measurement in same illumination conditions
+
+\end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -508,6 +543,10 @@ SHOW PICTURES HERE!
 \end{itemize}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data Processing}
+\subsection*{}
 % --- slide ------------------------------------------------
 \begin{frame}{Data Extraction}
 \begin{itemize}\itemsep.4cm
@@ -538,10 +577,204 @@ SHOW PICTURES HERE!
 
 \end{frame}
 % --- slide ------------------------------------------------
-\begin{frame}{Reflectance from Matlab}{SVC}
+\begin{frame}{Text files manipulation}{SVC}
 \begin{figure}
 \centering
-    \includegraphics[height=6cm]{./Images/Reflectances.png}
+    \includegraphics[height=6.5cm]{./Images/Reflectances.png}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%% SECTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\subsection*{}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns }
+\Large
+
+\begin{itemize}
+	\item Negative
+
+	\begin{itemize}\itemsep.1cm
+	\large
+		\item Weather dependent
+		\item Extreme environmental conditions (too cold or too hot)
+		\item Instrumentation failure
+		\item Long days
+	\end{itemize}
+
+	\item Positive
+
+	\begin{itemize}\itemsep.1cm
+	\large
+		\item Brings theory to practice
+		\item Appreciate nature (nice to be outside your office)
+		\item Get to know more about your colleagues
+		\item Know new places
+		\item It is FUN!
+	\end{itemize}	
+\end{itemize}
+
+\end{frame}
+
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/BoatLuxury.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/BoatLuxury2.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[angle=-90,origin=c,height=6.5cm]{./Images/Boat.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/SAM_1370.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/JavierBoat.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[angle=90,origin=c,height=6.5cm]{./Images/PaulBoat2.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/CanoePrep.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[angle=-90,origin=c,height=6.5cm]{./Images/CanoeTransport.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/CanoePrep2.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/CanoeOnWater.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/JavierPaddle.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[angle=90,origin=c,height=6.5cm]{./Images/JavierCanoe.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/NastyWater.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/PaulCanoe.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/PaulCanoeFeet.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/PaulSand.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/Birds2.jpg}
+\end{figure}
+
+\end{frame}
+% --- slide ------------------------------------------------
+\begin{frame}{Field Campaigns in Pictures}
+\vspace{-.5cm}
+\begin{figure}
+\centering
+    \includegraphics[height=7cm]{./Images/Birds.jpg}
 \end{figure}
 
 \end{frame}
@@ -574,16 +807,11 @@ SHOW PICTURES HERE!
 \vspace{-.3cm}
 % \centerline{\Huge QUESTIONS?}
 \uncover <2->{\centerline{\Huge QUESTIONS?}}
-\vspace{\baselineskip}
-\centerline{Javier A. Concha}
-\centerline{jxc4005@rit.edu}
 
 \begin{figure}[htb]
 \centering
-\includegraphics[height=5cm]{./Images/LC80160302013262LGN00.jpg}
+\includegraphics[height=6.5cm]{./Images/NiceView.jpg}
 \end{figure}
-\vspace{-.5cm}
-\centerline{\tiny (09/19/2013)}
 \end{frame}
 }
 % % BIBLIOGRAPHY
